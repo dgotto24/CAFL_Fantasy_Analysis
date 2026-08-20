@@ -9,6 +9,7 @@ import plotly.express as px
 mgapts = pd.read_csv("./megaptstable.csv")
 ptsdiff = pd.read_csv("./ptsdiff.csv")
 
+st.title("2026 CAFL Fantasy Analysis")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -100,6 +101,7 @@ with plr2:
     else:
         st.write('please select a player.')
 
+st.divider()
 
 # group by players, sum pts, find top 3 F, top 2 D, top G, Team of the Year
 st.subheader('Team of the Year')
@@ -140,7 +142,7 @@ styledG = styledG.style.set_properties(
 st.write('Goalie')
 st.write(styledG)
 
-
+st.divider()
          
 st.subheader('Here\'s how the season went.')
 # fig = px.scatter(
@@ -234,6 +236,7 @@ fig.update_layout(
 st.plotly_chart(fig, use_container_width=True)
 
 
+st.divider()
 
 
 st.subheader('Cumulative Point Differential')
@@ -303,6 +306,8 @@ two_team_100_names = (
 )
 #st.write(two_team_100_names)
 #st.write(mgapts[mgapts['name'].isin(two_team_100_names)].sort_values('name'))
+
+st.divider()
 
 st.subheader("Miscellaneous Stats")
 
