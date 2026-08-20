@@ -9,7 +9,7 @@ import plotly.express as px
 mgapts = pd.read_csv("./megaptstable.csv")
 ptsdiff = pd.read_csv("./ptsdiff.csv")
 
-st.title("2026 CAFL Fantasy Analysis")
+st.title("2025/26 CAFL Fantasy Analysis")
 
 col1, col2 = st.columns(2)
 with col1:
