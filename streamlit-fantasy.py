@@ -9,7 +9,6 @@ import plotly.express as px
 season = st.sidebar.radio(
     "Season",
     ["2025-26", "2026-27"],
-    horizontal=True
 )
 
 
