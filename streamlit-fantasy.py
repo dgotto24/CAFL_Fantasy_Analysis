@@ -6,6 +6,21 @@ from datetime import time, datetime
 import numpy as np
 import plotly.express as px
 
+st.set_page_config(page_title="My Dashboard", layout="wide")
+
+# Optional: shared sidebar content shown on every page
+st.sidebar.title("My Dashboard")
+st.sidebar.write("Navigation is below.")
+
+pages = [
+    st.Page("pages/home.py", title="Home", icon="🏠"),
+    st.Page("pages/data_analysis.py", title="Data Analysis", icon="📊"),
+    st.Page("pages/about.py", title="About", icon="ℹ️"),
+]
+
+page = st.navigation(pages, position="sidebar")
+page.run()
+
 mgapts = pd.read_csv("./megaptstable.csv")
 ptsdiff = pd.read_csv("./ptsdiff.csv")
 
