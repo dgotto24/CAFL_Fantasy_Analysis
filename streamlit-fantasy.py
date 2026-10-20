@@ -7,7 +7,7 @@ import numpy as np
 import plotly.express as px
 
 st.set_page_config(
-    page_title="Fantasy App",
+    page_title="CAFL Analysis App",
     page_icon="🏆",
     layout="wide",
 )
@@ -398,9 +398,6 @@ if season == "2025-26":
         st.write(tossed)
 
 else:
-    st.write("Coming Soon")
-    st.title(f"Carson Alumni Fantasy League Analysis — {season}")
-    
     
     pos_pts = pd.read_csv("./2026_7_pos_pts.csv")
 
@@ -411,9 +408,9 @@ else:
     st.image('./FRAUD_2026_7_W3.png')
         
     st.subheader('Teams of the Week')
-    st.image('./OTW_2026_7_W3.png')
-    st.image('./OTW_2026_7_W2.png')
-    st.image('./OTW_2026_7_W1.png')
+    st.image('./TOTW_2026_7_W3.png')
+    st.image('./TOTW_2026_7_W2.png')
+    st.image('./TOTW_2026_7_W1.png')
 
     
 
