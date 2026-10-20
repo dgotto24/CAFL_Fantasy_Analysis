@@ -14,7 +14,7 @@ st.set_page_config(
 
 season = st.sidebar.radio(
     "Season",
-    ["2025-26", "2026-27"],
+    ["2026-27", "2025-26"],
 )
 
 
