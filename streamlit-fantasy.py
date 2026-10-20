@@ -9,7 +9,6 @@ import plotly.express as px
 st.set_page_config(
     page_title="CAFL Analysis App",
     page_icon="🏆",
-    layout="wide",
 )
 
 season = st.sidebar.radio(
