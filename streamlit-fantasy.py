@@ -12,7 +12,7 @@ season = st.sidebar.radio(
 )
 
 
-st.title(f"Hockey Fantasy Analysis — {season}")
+st.title(f"Carson Alumni Fantasy League Analysis — {season}")
 # st.title("2025/26 CAFL Fantasy Analysis")
 
 if season == "2025-26":
@@ -393,3 +393,16 @@ if season == "2025-26":
 
 else:
     st.write("Coming Soon")
+    st.title(f"Carson Alumni Fantasy League Analysis — {season}")
+    
+
+
+
+
+
+
+
+
+
+
+
