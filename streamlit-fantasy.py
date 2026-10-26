@@ -398,15 +398,16 @@ if season == "2025-26":
 
 else:
     
-    pos_pts = pd.read_csv("./2026_7_pos_pts.csv")
+    pos_pts = pd.read_csv("./2026_7_pos_pts_W4.csv")
 
     st.subheader("Standings and Points by Position")
     st.dataframe(pos_pts)
 
     st.subheader('FRAUD-O-METER')
-    st.image('./FRAUD_2026_7_W3.png')
+    st.image('./FRAUD_2026_7_W4.png')
         
     st.subheader('Teams of the Week')
+    st.image('./TOTW_2026_7_W4.png')
     st.image('./TOTW_2026_7_W3.png')
     st.image('./TOTW_2026_7_W2.png')
     st.image('./TOTW_2026_7_W1.png')
