@@ -407,7 +407,7 @@ else:
     st.image('./FRAUD_2026_7_W5.png')
 
     st.subheader('Power Rankings')
-    st.image('./2026_THG_PWRRNK_W5')
+    st.image('./2026_THG_PWRRNK_W5.png')
     
     st.subheader('Teams of the Week')
     st.image('./TOTW_2026_7_W5.png')
