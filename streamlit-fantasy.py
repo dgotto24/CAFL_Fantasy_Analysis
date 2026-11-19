@@ -400,7 +400,7 @@ else:
     
     pos_pts = pd.read_csv("./2026_7_pos_pts_W7.csv")
 
-    st.subheader("Standings and Points by Position")
+    st.subheader("Point Totals and Points by Position")
     st.dataframe(pos_pts)
 
     st.subheader('FRAUD-O-METER')
