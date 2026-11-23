@@ -398,18 +398,20 @@ if season == "2025-26":
 
 else:
     
-    pos_pts = pd.read_csv("./2026_7_pos_pts_W7.csv")
+    pos_pts = pd.read_csv("./2026_7_pos_pts_W8.csv")
 
     st.subheader("Point Totals and Points by Position")
     st.dataframe(pos_pts)
 
     st.subheader('FRAUD-O-METER')
-    st.image('./FRAUD_2026_7_W7.png')
+    st.image('./FRAUD_2026_7_W8.png')
 
     st.subheader('Power Rankings')
-    st.image('./2026_THG_PWRRNK_W7.png')
-    
+    st.image('./2026_THG_PWRRNK_W8.png')
+
+    #ONCE I ADD PWR RNK LINE GRAPH, MOVE ALL THESE INTO A DROP DOWN EXCEPT THE MOST RECENT ONE
     st.subheader('Teams of the Week')
+    st.image('./TOTW_2026_7_W8.png')
     st.image('./TOTW_2026_7_W7.png')
     st.image('./TOTW_2026_7_W6.png')
     st.image('./TOTW_2026_7_W5.png')
